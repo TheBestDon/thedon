@@ -3,6 +3,9 @@ const welcome = require('cli-welcome')
 const pkgJSON = require('./package.json')
 const chalk = require('chalk')
 const log = console.log
+const dim = chalk.dim
+
+const social = color => text => chalk.hex(color).bold.inverse(text)
 
 welcome({
   title: pkgJSON.name,
@@ -15,11 +18,10 @@ welcome({
   clear: true
 })
 
-log(`
-${chalk.blue(' Donatas Bakanas ')}
+log(`${chalk.blue(' Donatas Bakanas ')}
 
-${chalk.dim(`Software Engineer.`)}
+${dim.italic(`Software Engineer.`)}
 
-🐦 ${chalk.hex('#1da1f2').bold.inverse(` Twitter `)}: ${chalk.dim(`@donas04`)}
-↪ ${chalk.hex('#bada55').bold.inverse(` Github `)}: ${chalk.dim(`https://github.com/TheBestDon/`)}
+🐦 ${social('#1da1f2')(` Twitter `)}: ${dim(`@donas04`)}
+↪ ${social('#bada55')(` Github `)}: ${dim(`https://github.com/TheBestDon/`)}
 `);
