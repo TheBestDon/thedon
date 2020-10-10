@@ -1,0 +1,26 @@
+{
+  "name": "thedon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "thedon": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBestDon/thedon.git"
+  },
+  "keywords": [],
+  "author": "Donatas Bakanas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheBestDon/thedon/issues"
+  },
+  "homepage": "https://github.com/TheBestDon/thedon#readme",
+  "dependencies": {
+    "clear-any-console": "^1.16.2"
+  }
+}
