@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 const welcome = require('cli-welcome')
 const pkgJSON = require('./package.json')
+const chalk = require('chalk')
+const log = console.log
+
 welcome({
   title: pkgJSON.name,
   tagLine: `Hey, nice to meet ya!`,
@@ -12,11 +15,11 @@ welcome({
   clear: true
 })
 
-console.log(`
-Donatas Bakanas
+log(`
+${chalk.blue(' Donatas Bakanas ')}
 
-Software Engineer.
+${chalk.dim(`Software Engineer.`)}
 
-🐦 @donas04
-↪ https://github.com/TheBestDon/
+🐦 ${chalk.hex('#1da1f2').bold.inverse(` Twitter `)}: ${chalk.dim(`@donas04`)}
+↪ ${chalk.hex('#bada55').bold.inverse(` Github `)}: ${chalk.dim(`https://github.com/TheBestDon/`)}
 `);

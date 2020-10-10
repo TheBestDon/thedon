@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/TheBestDon/thedon#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "cli-welcome": "^2.2.2"
   }
 }
