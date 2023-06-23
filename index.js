@@ -1,25 +1,24 @@
 #!/usr/bin/env node
-import fs from 'node:fs/promises';
-import * as welcome from 'cli-welcome'
-import chalk from 'chalk'
+const welcome = require('cli-welcome')
+const pkgJSON = require('./package.json')
+const chalk = require('chalk')
 const log = console.log
 const dim = chalk.dim
 
-const packageJson = JSON.parse(await fs.readFile('package.json'));
 const social = color => text => chalk.hex(color).bold.inverse(text)
 
-welcome.default({
-  title: packageJson.name,
+welcome({
+  title: pkgJSON.name,
   tagLine: `Hey, nice to meet ya!`,
-  description: packageJson.description,
-  version: packageJson.version,
+  description: pkgJSON.description,
+  version: pkgJSON.version,
   bgColor: `#FADC00`,
   color: `#000000`,
   bold: true,
   clear: true
 })
 
-log(`${chalk.blue(` ${packageJson.author}`)}
+log(`${chalk.blue(' Donatas Bakanas ')}
 
 ${dim.italic(`Software Engineer.`)}
 
