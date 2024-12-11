@@ -20,9 +20,9 @@ welcome({
 
 log(`${chalk.blue(' Donatas Bakanas ')}
 
-${dim.italic(`Software Engineer.`)}
+${dim.italic(`Full Stack Software Engineer.`)}
 
 🐦 ${social('#1da1f2')(` Twitter `)}: ${dim(`@donas04`)}
 ↪ ${social('#bada55')(` Github `)}: ${dim(`https://github.com/TheBestDon/`)}
-👔 ${social('#0077b5')(` LinkedIn `)}: ${dim(`https://www.linkedin.com/in/donatas-bakanas/`)}
+👔 ${social('#0077b5')(` LinkedIn `)}: ${dim(`https://www.linkedin.com/in/thebestdon/`)}
 `);
